@@ -4,8 +4,6 @@ const path = require('path');
 const chokidar = require('chokidar');
 
 const app = express();
-const PORT = process.env.PORT || 1530;
-
 // 中间件
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -677,8 +675,9 @@ watcher.on('all', (event, path) => {
 // 初始化并启动服务器
 initializeDocsStructure();
 
-const server = app.listen(PORT, () => {
-    console.log(`服务器已启动，正在监听 http://localhost:${PORT}`);
+const server = app.listen(0, () => {
+    const actualPort = server.address().port;
+    console.log(`服务器已启动，正在监听 http://localhost:${actualPort}`);
     console.log('正在监控 "docs" 目录...');
 });
 
