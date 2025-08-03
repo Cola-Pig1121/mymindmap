@@ -4,7 +4,7 @@ const path = require('path');
 const chokidar = require('chokidar');
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 7000;
 
 // 中间件
 app.use(express.json());
@@ -689,3 +689,4 @@ process.on('SIGINT', () => {
     process.exit(0);
 
 });
+
