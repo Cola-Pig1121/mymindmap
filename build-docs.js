@@ -632,9 +632,9 @@ async function main() {
     console.log('构建文档结构...');
     const docsStructure = buildDocsStructure(path.join(__dirname, 'docs'));
     
-    console.log('生成静态mind.html...');
+    console.log('生成静态index.html...');
     const mindHTML = generateStaticMindHTML(docsStructure);
-    fs.writeFileSync(path.join(__dirname, 'dist', 'mind.html'), mindHTML);
+    fs.writeFileSync(path.join(__dirname, 'dist', 'index.html'), mindHTML);
     
     console.log('文档处理完成！');
 }
