@@ -4,7 +4,7 @@ const path = require('path');
 const chokidar = require('chokidar');
 
 const app = express();
-const PORT = 1530;
+const PORT = process.env.PORT || 1530;
 
 // 中间件
 app.use(express.json());
