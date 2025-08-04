@@ -263,7 +263,7 @@ function generateMindmapHTML(content, fileName) {
             margin: 10px 0;
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18"></script>
+    <script src="https://fastly.jsdelivr.net/npm/markmap-autoloader@0.18"></script>
 </head>
 <body>
     <div class="markmap">
@@ -280,8 +280,8 @@ ${processedContent}
         </script>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://fastly.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <script>
         let markmapInstance = null;
         
